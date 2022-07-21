@@ -1,1 +1,1 @@
-Basic html/css layout for china shipping# china-shipping
+Basic html and css layout for china shipping# china-shipping
