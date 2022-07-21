@@ -1,0 +1,52 @@
+.main {
+    background: url(../img/background.png);
+    background-size: cover;
+    color: white;
+}
+.navigation-logo {
+    position: relative;
+    right: 5%;
+}
+.navigation-button {
+    position: relative;
+    bottom: 10%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navigation-contact-logo {
+    position: relative;
+    left: 5%;
+}
+.navigation-contact-text {
+    position: relative;
+    left: 5%;
+}
+.header {
+    width: 100%;
+    margin: 0%;
+}
+.navigation-button {
+    color: white;
+    text-decoration: none;
+}
+.calculation {
+    background-color: black;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+.calculation-input {
+    background-color: black;
+}
+.calculation-button {
+    background-color: orange;
+    color: white;
+}
+.schedulation {
+    background-color: #E2D98247;
+}
+.container {
+    text-align: center;
+  }
+  .footer {
+    background: #657F8E;
+  }
