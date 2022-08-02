@@ -34,7 +34,7 @@
     <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Favicon ends -->
-    
+
     <!-- Open Graph starts -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="">
@@ -55,77 +55,209 @@
     <!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-BVG112E17D"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-	  gtag('config', 'G-BVG112E17D');
+    gtag('config', 'G-BVG112E17D');
 	</script>
 	<!-- Google Analytics ends-->
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <a href="#" class="logo-link">
+                    <img src="img/logo.png" alt="delivery truck" class="logo-img">
+                </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a href="#" class="menu-link" target="_blank">
+                                    Our services
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="#" class="menu-link" target="_blank">
+                                    Advantages
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="#" class="menu-link" target="_blank">
+                                    Scheme of work
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="#" class="menu-link" target="_blank">
+                                    Contacts
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                <a href="tel:+0089458648" class="contact-phone">
+                    <img src="img/contact.png" alt="" class="contact-phone__img">
+                    <div class="contact-phone_wrapper">
+                        <p class="bold">Call us:</p>
+                        <p>+00 89 458 648</p>
+                    </div>
+                </a>
+            </div>
+            <div class="header-content">
+                <h1 class="header-title">
+                    China shipping
+                </h1>
+                <p class="header-subtitle">
+                    favorable conditions, high speed delivery, fast calculation
+                </p>
+                <form action="POST" class="header__form form">
+                    <p class="form__title">Calculate shipping cost</p>
+                    <input type="text" class="form__input" name="name" placeholder="Name*" required>
+                    <input type="tel" class="form__input" name="phone" placeholder="Phone*" pattern="\d{10}|\d{11}|\d{12}|[+]\d{12}" required>
+                    <button class="form__button">Order a calculation</button>
+                    <span class="form__secure-data">*your data will not be passed on to third parties</span>
+                </form>
+            </div>
+        </div>
+    </header>
+    
     <main class="main">
-        <header class="header">
+        <section class="work-video">
             <div class="container">
-                <img class="navigation-logo" src="img/logo.png" alt="Delivery">
-                <a class="navigation-button" href="#" target="_blank">OUR SERVICES</a>
-                <a class="navigation-button" href="#" target="_blank">ADVANTAGES</a>
-                <a class="navigation-button" href="#" target="_blank">SCHEME OF WORK</a>
-                <a class="navigation-button" href="#" target="_blank">CONTACTS</a>
-                <img class="navigation-contact-logo" src="img/contact.png" alt="phone">
-                <span class="navigation-contact-text">
-                    Call us: +00 89 458 648
-                </span>
+                <h2 class="title">Video with our work</h2>
+                <video width="852" height="466" controls>
+                    <source src="video/china-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
-        </header>
-        <section class="introduction">
+        </section>
+        <section class="week-schedule">
             <div class="container">
-                <h1 class="introduction-title">CHINA SHIPPING</h1>
-                <h3 class="introduction-subtitle">
-                    FAVORABLE CONDITIONS, HIGH SPEED DELIVERY<br>
-                    FAST CALCULATION
-                </h3>
-            </div>
-            <div class="calculation">
-                <div class="container">
-                    <h3 class="calculation-title">CALCULATE SHIPPING COST</h3>
-                    <input class="calculation-input" name="name" placeholder="Name*">
-                    <input class="calculation-input" name="phone" placeholder="Phone*">
-                    <button class="calculation-button" href="#">Order a calculation</button>
-                    <p>*your data will not be passed on to third parties</p>
-                </div>
+                <h2 class="title">Week schedule graph</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>6:00-8:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>6:00-8:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10:00-12:00</td>
+                            <td>Florida, John Doe</td>
+                            <td></td>
+                            <td></td>
+                            <td>California, Eugene Zalevskiy</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12:00-14:00</td>
+                            <td></td>
+                            <td>Florida, John Doe</td>
+                            <td></td>
+                            <td></td>
+                            <td>San Diego, Sam Wealy</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>16:00-18:00</td>
+                            <td>Texas, Juan Romirez</td>
+                            <td></td>
+                            <td></td>
+                            <td>New York, Alice Chew</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>18:00-20:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>20:00-22:00</td>
+                            <td></td>
+                            <td></td>
+                            <td>San-Francisco,</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>22:00-24:00</td>
+                            <td></td>
+                            <td></td>
+                            <td>James Black</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="week-schedule__description">
+                    <span class="bold">China shipping</span> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+                    qui officia deserunt mollit anim id est laborum...
+                </p>
             </div>
         </section>
     </main>
-    <section class="video">
-        <div class="container">
-            <h2 class="video-title">VIDEO WITH OUR WORK</h2>
-            <img class="video" src="img/video.png" alt="Video">
-        </div>
-    </section>
-    <section class="schedulation">
-        <div class="container">
-            <h1 class="schedulation-title">WEEK SCHEDULE GRAPH</h1>
-            <img class="schedule-img" src="img/schedule.png" alt="Schedule">
-            <p class="schedulation-description">
-                <b>China shipping</b> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...
-            </p>
-        </div>
-    </section>
+    
     <footer class="footer">
         <div class="container">
-            <img class="footer-logo" src="img/logo.png" alt="Delivery">
-            <span class="footer-text">Al rights reserved 2022</span>
-            <button class="footer-contact-button"><img src="img/contact.png" alt="phone"></button>
-            <span class="footer-contact-text">
-                Call us: +00 89 458 648
-            </span>
+            <a href="#" class="logo-link logo-link--small">
+                <img src="img/logo.png" alt="delivery truck" class="logo-img">
+            </a>
+            <p class="footer-copyright">
+                All rights reserved 2022
+            </p>
+            <a href="tel:+0089458648" class="contact-phone">
+                <img src="img/contact.png" alt="" class="contact-phone__img">
+                <div class="contact-phone_wrapper">
+                    <p class="bold">Call us:</p>
+                    <p>+00 89 458 648</p>
+                </div>
+            </a>
         </div>
     </footer>
+
 <script src="js/script.js"></script>
 </body>
 </html>
