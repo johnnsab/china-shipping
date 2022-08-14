@@ -48,7 +48,7 @@
     <!-- fonts and styles starts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;800;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<!-- fonts and styles ends -->
 
@@ -66,8 +66,8 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__top">
+        <div class="header__top">
+            <div class="container">
                 <a href="#" class="logo-link">
                     <img src="img/logo.png" alt="delivery truck" class="logo-img">
                 </a>
@@ -97,13 +97,15 @@
                     </nav>
                 <a href="tel:+0089458648" class="contact-phone">
                     <img src="img/contact.png" alt="" class="contact-phone__img">
-                    <div class="contact-phone_wrapper">
+                    <div class="contact-phone__wrapper">
                         <p class="bold">Call us:</p>
                         <p>+00 89 458 648</p>
                     </div>
                 </a>
             </div>
-            <div class="header-content">
+        </div>
+        <div class="header-content">
+            <div class="container">
                 <h1 class="header-title">
                     China shipping
                 </h1>
@@ -112,9 +114,11 @@
                 </p>
                 <form action="POST" class="header__form form">
                     <p class="form__title">Calculate shipping cost</p>
-                    <input type="text" class="form__input" name="name" placeholder="Name*" required>
-                    <input type="tel" class="form__input" name="phone" placeholder="Phone*" pattern="\d{10}|\d{11}|\d{12}|[+]\d{12}" required>
-                    <button class="form__button">Order a calculation</button>
+                    <div class="form__wrapper">
+                        <input type="text" class="form__input" name="name" placeholder="Name*" required>
+                        <input type="tel" class="form__input" name="phone" placeholder="Phone*" pattern="\d{10}|\d{11}|\d{12}|[+]\d{12}" required>
+                        <button class="form__button">Order a calculation</button>
+                    </div>
                     <span class="form__secure-data">*your data will not be passed on to third parties</span>
                 </form>
             </div>
