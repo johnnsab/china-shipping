@@ -129,7 +129,7 @@
         <section class="work-video">
             <div class="container">
                 <h2 class="title">Video with our work</h2>
-                <video width="852" height="466" controls>
+                <video width="852" height="466" class="work-video__video" controls>
                     <source src="video/china-video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -153,7 +153,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>6:00-8:00</td>
+                            <td class="green">6:00-8:00</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -163,7 +163,7 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td>6:00-8:00</td>
+                            <td class="green">6:00-8:00</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -173,60 +173,60 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td>10:00-12:00</td>
-                            <td>Florida, John Doe</td>
+                            <td class="green">10:00-12:00</td>
+                            <td class="yellow">Florida, John Doe</td>
                             <td></td>
                             <td></td>
-                            <td>California, Eugene Zalevskiy</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>12:00-14:00</td>
-                            <td></td>
-                            <td>Florida, John Doe</td>
-                            <td></td>
-                            <td></td>
-                            <td>San Diego, Sam Wealy</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>16:00-18:00</td>
-                            <td>Texas, Juan Romirez</td>
-                            <td></td>
-                            <td></td>
-                            <td>New York, Alice Chew</td>
+                            <td class="orange">California, Eugene Zalevskiy</td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td>18:00-20:00</td>
+                            <td class="green">12:00-14:00</td>
+                            <td class="yellow"></td>
+                            <td class="yellow">Florida, John Doe</td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>20:00-22:00</td>
-                            <td></td>
-                            <td></td>
-                            <td>San-Francisco,</td>
-                            <td></td>
-                            <td></td>
+                            <td class="orange"></td>
+                            <td class="orange">San Diego, Sam Wealy</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td>22:00-24:00</td>
+                            <td class="green">16:00-18:00</td>
+                            <td class="orange">Texas, Juan Romirez</td>
+                            <td class="yellow"></td>
+                            <td></td>
+                            <td class="red">New York, Alice Chew</td>
+                            <td class="orange"></td>
                             <td></td>
                             <td></td>
-                            <td>James Black</td>
+                        </tr>
+                        <tr>
+                            <td class="green">18:00-20:00</td>
+                            <td class="orange"></td>
+                            <td class="yellow"></td>
+                            <td></td>
+                            <td></td>
+                            <td class="orange"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="green">20:00-22:00</td>
+                            <td class="orange"></td>
+                            <td></td>
+                            <td class="yellow">San-Francisco,</td>
+                            <td></td>
+                            <td class="orange"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="green">22:00-24:00</td>
+                            <td></td>
+                            <td></td>
+                            <td class="yellow">James Black</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -246,15 +246,17 @@
     
     <footer class="footer">
         <div class="container">
-            <a href="#" class="logo-link logo-link--small">
-                <img src="img/logo.png" alt="delivery truck" class="logo-img">
-            </a>
-            <p class="footer-copyright">
-                All rights reserved 2022
-            </p>
+            <div class="footer__wrapper">
+                <a href="#" class="logo-link logo-link--small">
+                    <img src="img/logo.png" alt="delivery truck" class="logo-img">
+                </a>
+                <p class="footer-copyright">
+                    All rights reserved 2022
+                </p>
+            </div>
             <a href="tel:+0089458648" class="contact-phone">
                 <img src="img/contact.png" alt="" class="contact-phone__img">
-                <div class="contact-phone_wrapper">
+                <div class="contact-phone__wrapper">
                     <p class="bold">Call us:</p>
                     <p>+00 89 458 648</p>
                 </div>
