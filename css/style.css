@@ -46,6 +46,15 @@ body {
     align-items: center;
 }
 
+.logo-link {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.logo-link:hover {
+    transform: scale(1.2);
+}
+
 .menu__list {
     display: flex;
     justify-content: space-between;
@@ -59,18 +68,44 @@ body {
     padding: 0 8px;
 }
 
+.menu-link::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.menu__list-item:hover .menu-link:after {
+    opacity: 1;
+}
+
 .contact-phone {
     display: flex;
     color: #fff;
     font-size: 17px;
 }
 
+.contact-phone:hover .contact-phone__img{
+    transform: rotate(25deg);
+}
+
+.contact-phone:hover .contact-phone__wrapper {
+    text-shadow: 0px 5px 9px rgba(0, 0, 0, 0.9);
+}
+
 .contact-phone__img {
     height: 44px;
+    transition: transform 0.5s ease;
+    transform: rotate(0);
 }
 
 .contact-phone__wrapper {
     margin-left: 20px;
+    transition: text-shadow 0.5s ease;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
 .bold {
@@ -134,17 +169,26 @@ body {
     border: 2px solid #fff;
     background: none;
     padding: 15px 10px;
+    transition: border 0.2s ease;
 }
 
 .form__input:focus {
     outline: none;
+    border: 2px solid #FF7A00;
 }
 
 .form__button {
     background: #FF7A00;
     border: none;
     cursor: pointer;
+    transition: all 0.5s ease;
 }
+
+.form__button:hover {
+    background: #fff;
+    color: #ff7a00;
+}
+
 
 .form__secure-data {
     display: block;
@@ -152,4 +196,99 @@ body {
     font-weight: 100;
     color: rgba(255, 255, 255, 0.7);
     text-align: center;
+}
+
+/* title */
+
+.title{
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* work-video */
+
+.work-video .container {
+    padding: 56px 0 83px;
+}
+
+.work-video__video {
+    display: block;
+    margin: 56px auto 0;
+}
+
+/* week-schedule */
+
+.week-schedule {
+    background-color: rgba(226, 217, 138, 0.28);
+}
+
+.week-schedule .container {
+    padding: 67px 0 75px;
+    
+}
+
+.table {
+    width: 100%;
+    margin-top: 107px;
+    background-color: #fff;
+    border: 1px solid #e1e3e3;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid rgba(76, 76, 76, 0.2);
+}
+
+.table thead {
+    background-color: #9ec284;
+    text-align: center;
+}
+
+.green {
+    background-color: #9ec284;
+    
+}
+
+.yellow {
+    background-color: #f8d978;
+}
+
+.orange {
+    background-color: #ebb476;
+}
+
+.red {
+    background-color: #cf6d6a;
+}
+
+.week-schedule__description {
+    margin-top: 58px;
+    width: 100%;
+    line-height: 1.8;
+}
+
+/* footer */
+.footer {
+    background-color: #657f8e;
+}
+
+.footer .container {
+    padding: 29px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.footer-copyright {
+    margin-left: 26px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
 }
